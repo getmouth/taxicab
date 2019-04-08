@@ -43,12 +43,12 @@ directions.map(dir => {
 
   for (let i = 0; i < blocks; i++) {
     position[step] += count; // positon coord increment 
-    const key = `${position.x},${position.y}`;
-    if (visited.indexOf(key) > -1) {
-      console.log('Key: ',key);
+    const value = `${position.x},${position.y}`;
+    if (visited.indexOf(value) > -1) {
+      console.log('value: ',value);
       return
     }else {
-      visited.push(key)
+      visited.push(value)
     }
   }
 
